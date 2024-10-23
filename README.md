@@ -14,7 +14,7 @@ my first blog.
 first install dependencies using :
 
 ```bash
-  npm i
+npm i
 ```
 
 run this command to create needed database:
