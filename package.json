@@ -1,0 +1,58 @@
+{
+  "name": "tech_blog",
+  "version": "1.0.0",
+  "description": "im going to develop a news page using mysql (sequelize) and it's my first time using this database ! so hop i could complete this, and one more thing im NOT developer of frontend, i downloaded it from here : https://www.free-css.com/free-css-templates/page244/tech-blog",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node",
+    "dev": "nodemon",
+    "db": "dotenv -e .env -- sequelize-cli db:create --config ./src/config_sequelize.js",
+    "migrate": "dotenv -e .env -- sequelize-cli db:migrate --config ./src/config_sequelize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirUnchained/tech_blog.git"
+  },
+  "keywords": [
+    "blog",
+    "mysql",
+    "nodejs",
+    "js"
+  ],
+  "author": "backend developer telegram : @sirUnchaind",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.669.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cookie-session": "^2.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-flash": "^0.0.2",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "sequelize": "^6.37.4",
+    "sequelize-cli": "^6.6.2",
+    "sharp": "^0.33.5",
+    "svg-captcha": "^1.4.0",
+    "uuid": "^10.0.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/sirUnchained/tech_blog/issues"
+  },
+  "homepage": "https://github.com/sirUnchained/tech_blog#readme"
+}
