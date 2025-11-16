@@ -1,10 +1,8 @@
-const unzip_files = require("./extract");
-unzip_files();
-
 const { db } = require("./db");
 const redis = require("./utils/redis");
 const app = require("./app");
 const configs = require("./configENV");
+const unzip_files = require("./extract");
 
 async function connect() {
   try {
@@ -20,4 +18,5 @@ async function connect() {
   }
 }
 
+unzip_files();
 connect();
