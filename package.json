@@ -4,7 +4,7 @@
   "description": "im going to develop a news page using mysql (sequelize) and it's my first time using this database ! so hop i could complete this, and one more thing im NOT developer of frontend, i downloaded it from here : https://www.free-css.com/free-css-templates/page244/tech-blog",
   "main": "./src/server.js",
   "scripts": {
-    "start": "node",
+    "start": "node ./src/server.js",
     "dev": "nodemon",
     "db": "dotenv -e .env -- sequelize-cli db:create --config ./src/config_sequelize.js",
     "migrate": "dotenv -e .env -- sequelize-cli db:migrate --config ./src/config_sequelize.js"
@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.669.0",
+    "adm-zip": "^0.5.16",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.7",
     "cookie-session": "^2.1.0",
@@ -50,7 +51,6 @@
     "uuid": "^10.0.0",
     "yup": "^1.4.0"
   },
-  "devDependencies": {},
   "bugs": {
     "url": "https://github.com/sirUnchained/tech_blog/issues"
   },
